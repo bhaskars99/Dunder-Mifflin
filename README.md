@@ -1,13 +1,13 @@
 # Dunder-Mifflin
 
-Here are the steps to view the application
+Here are the steps to view the application:
 
-clone/download the repository on to your system.
+Clone/download the repository on to your system.
 
-Please use a webserver to execute the application on PC/laptop locally. 
+Please use a webserver to execute the application on PC/Laptop locally. 
 
 Suggestion: 
-I used brackets to develop this application. 
+I have used brackets to develop the application. 
 
 To download brackets please visit http://brackets.io  
 
