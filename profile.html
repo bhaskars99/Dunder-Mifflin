@@ -4,10 +4,10 @@
           <div class="panel-heading">Profile Details</div>
             <div class="panel-body">
                 <p><label>{{userDetails.name}}</label></p>
-                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>                                                                  {{userDetails.address.street}},{{userDetails.address.suite}}<br>
-                    {{userDetails.address.city}},{{userDetails.address.zipcode}}</p>
-                <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>{{userDetails.phone}}</p>
-               <p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>{{userDetails.email}}</p>
+                <p><span class="glyphicon glyphicon-map-marker display-ilb" style="vertical-align:top;" aria-hidden="true"></span>                                                             <span class="display-ilb">{{userDetails.address.street}},{{userDetails.address.suite}}<br>
+                    {{userDetails.address.city}},{{userDetails.address.zipcode}}</span>     </p>
+                <p><span class="glyphicon glyphicon-earphone display-ilb" aria-hidden="true"></span><span class="display-ilb">{{userDetails.phone}}</span></p>
+               <p><span class="glyphicon glyphicon-envelope display-ilb" aria-hidden="true"></span><span class="display-ilb">{{userDetails.email}}</span></p>
             </div>
         </div>
     </div>
@@ -17,7 +17,7 @@
                 <div class ="panel-body">
                 <div><b>{{(key+1)}}-{{eachPost.title}}</b></div>
                 <div class="commonTextIndent">{{eachPost.body}}</div>
-                <hr>
+                <div class="griditem"></div>
                 <div ng-repeat="(index,eachComment) in commentsData track by $index">
                     <div ng-if="eachPost.id===eachComment.postId">
                         <div><b>{{eachComment.name}}</b></div>
