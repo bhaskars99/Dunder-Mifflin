@@ -1,0 +1,11 @@
+  <div class="wrapper">
+      <div class="row welcomemsg">
+      <h2 class="form-signin-heading">Welcome to Dunder Mifflin</h2>
+      <p>Welcome to dunder mifflin internal network</p>
+      <p>Please enter a username to view posts and comments.</p></div>
+    <form class="form-signin" name="form" ng-submit="login()" novalidate> 
+        <span ng-if="showErrorMsg" class="alert alert-danger">Invalid Email</span>
+      <input type="text" ng-model="email" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+      <button type="submit" ng-disabled="form.$invalid" class="btn btn-lg btn-primary btn-block loginBtn">Login</button>
+    </form>
+  </div>
