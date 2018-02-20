@@ -1,4 +1,4 @@
-  <div class="wrapper">
+  <!--<div class="wrapper">
       <div class="row welcomemsg">
       <h2 class="form-signin-heading">Welcome to Dunder Mifflin</h2>
       <p>Welcome to dunder mifflin internal network</p>
@@ -9,3 +9,29 @@
       <button type="submit" ng-disabled="form.$invalid" class="btn btn-lg btn-primary btn-block loginBtn">Login</button>
     </form>
   </div>
+-->
+
+  <!-- LOGIN FORM -->
+<div class="text-center" style="padding:50px 0">
+  <div class="logo welcomemsg">Wellcome to Dunder-Mifflin</div>
+  <!-- Main Form -->
+  <div class="login-form-1">
+    <form id="login-form" class="text-left">
+      <div class="etc-login-form">
+        <p>Wellcome to Dunder-Mifflin internal network</p>
+        <p>Please enter a username to view your posts and comments</p>
+      </div>
+      <div class="login-form-main-message"></div>
+      <span ng-if="showErrorMsg" class="alert alert-danger">Invalid Email</span>
+      <div class="main-login-form">
+        <div class="login-group">
+          <div class="form-group">
+            <input type="email" class="form-control" id="lg_username" name="username" placeholder="Email Address">
+          </div>
+        </div>
+        <button type="submit" ng-disabled="form.$invalid" class="btn btn-lg btn-primary btn-block loginBtn">Login</button>
+      </div>
+    </form>
+  </div>
+  <!-- end:Main Form -->
+</div>
