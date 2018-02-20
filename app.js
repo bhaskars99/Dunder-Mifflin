@@ -33,7 +33,14 @@ angular.module("app", ["ui.router"])
 
     $urlRouterProvider.otherwise("/login");
 
-  })
+  }).run(['$rootScope', '$state', function($rootScope, $state) {
+       $rootScope.$on("$locationChangeStart", function(event, next, current) {
+          if(next == current) {
+                event.preventDefault();
+                $state.transitionTo('app');
+            }
+       });
+  }])
   .controller("LoginCtrl", function(data, $scope, $state, DataTransferService) {
     $scope.showErrorMsg = false;
     var isValidEmail = false;
